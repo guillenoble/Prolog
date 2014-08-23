@@ -5,8 +5,7 @@
   "Escribir una funcion que retorne solamente los numeros impares de
    una secuencia"
  [s]
- (filter odd? s)
- )
+ (filter(complement even?) s))
 
 
 
@@ -43,6 +42,7 @@
    Restricciones: max y max-key"
   [& args]
   
+  
 
   
  )
@@ -53,6 +53,7 @@
    Restricciones: split-at"
   [length s]
   
+  
   )
 
 (defn inter-two
@@ -62,12 +63,15 @@
   [s1 s2]
   
   
+  
   )
 
 (defn retrieve-caps
   "Escribir una funcion que reciba un string y devuelva un nuevo string conteniendo
    solamente las mayusculas."
   [text]
+  
+  
   
   
   )
