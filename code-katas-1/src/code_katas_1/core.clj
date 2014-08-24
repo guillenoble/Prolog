@@ -45,10 +45,14 @@
    y retorne el que tenga el valor mayor
    Restricciones: max y max-key"
   [& args]
+  (last(sort args))
+  
+  
+  )
   
 
   
- )
+ 
 
 
 (defn split-two
