@@ -24,10 +24,14 @@
   "Escribir una funcion que cree una lista de enteros en un rango dado.
    Restricciones: range"
   [start end]
+  (take-while(partial > end)(iterate inc start)))
+  
+ 
+  
   
       
  
-  )
+  
 
 (defn compress-sequence
   "Escribir una funcion que elimine los duplicados consecutivos
@@ -41,7 +45,6 @@
    y retorne el que tenga el valor mayor
    Restricciones: max y max-key"
   [& args]
-  
   
 
   
