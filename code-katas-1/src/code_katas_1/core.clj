@@ -26,18 +26,12 @@
   [start end]
   (take-while(partial > end)(iterate inc start)))
   
- 
-  
-  
-      
- 
-  
-
 (defn compress-sequence
   "Escribir una funcion que elimine los duplicados consecutivos
    de una secuencia"
   [s]
-  (distinct s)
+  (reduce #(if-not (= (last %1) %2)
+  (conj %1 %2)%1)[]s)
   )
 
 (defn max-value
@@ -45,16 +39,8 @@
    y retorne el que tenga el valor mayor
    Restricciones: max y max-key"
   [& args]
-  (last(sort args))
+ (last(sort args)))
   
-  
-  )
-  
-
-  
- 
-
-
 (defn split-two
   "Escribir una funcion que parta una secuencia en dos partes
    Restricciones: split-at"
