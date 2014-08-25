@@ -47,6 +47,7 @@
   [length s]
   
   
+  
   )
 
 (defn inter-two
@@ -64,6 +65,7 @@
    solamente las mayusculas."
   [text]
   
+  (apply str (filter #(Character/isUpperCase %) text))
   
   
   
@@ -74,7 +76,13 @@
    solamente si alguno de los parametros son true, pero no todos son true. En otro
    caso debera retornar false"
   [& xs]
+  (if(some true? xs)true false)
+  
+  
+  
+  
   )
+   
 
 (defn zip-map
   "Escribir una funcion que reciba un vector de claves y un vector de valores, y
