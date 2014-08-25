@@ -58,9 +58,6 @@
    Restricciones: interleave"
   [s1 s2]
   (mapcat vector s1 s2)
-  
-  
-  
   )
 
 (defn retrieve-caps
@@ -92,4 +89,6 @@
    construya un mapa a partir de ellos.
    Restricciones: zipmap"
   [k v]
+  (into{} (map vec (partition 2 (interleave k v))))
   )
+  
