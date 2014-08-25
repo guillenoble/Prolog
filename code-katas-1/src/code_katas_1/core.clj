@@ -45,8 +45,6 @@
   "Escribir una funcion que parta una secuencia en dos partes
    Restricciones: split-at"
   [length s]
-  [(take length s)(drop length s)]
-  
   
   
   
@@ -57,7 +55,6 @@
    luego el segundo de cada una, luego el tercero, etc.
    Restricciones: interleave"
   [s1 s2]
-  (mapcat vector s1 s2)
   
   
   
