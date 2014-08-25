@@ -76,7 +76,7 @@
    solamente si alguno de los parametros son true, pero no todos son true. En otro
    caso debera retornar false"
   [& xs]
-  (if(some true? xs)true false)
+  (if(and(some true? xs)(some false? xs))true false)
   
   
   
